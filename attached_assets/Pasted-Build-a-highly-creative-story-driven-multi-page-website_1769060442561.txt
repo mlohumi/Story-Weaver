@@ -1,0 +1,93 @@
+Build a highly creative, story-driven multi-page website for a wellness brand called “The Himalayan Plateau Inc.” that sells:
+1) Men’s Health Capsules
+2) Women’s Health (Effervescent) Tablets
+3) Anti Stress Capsules
+4) Ved Glow Capsules (skin glow)
+
+Goal: The website should NOT look like a typical AI template site. It must feel premium, cinematic, and narrative — like a scrollable story journey from the Himalayan foothills. The brand story: “crafted in the foothills of the Himalayas, refined for 25 years, using ancient Ayurvedic wisdom + modern quality practices.”
+
+TECH / IMPLEMENTATION
+- Use Next.js (App Router) + TypeScript + Tailwind CSS.
+- Use Framer Motion for smooth, tasteful animations.
+- Must be fully responsive (mobile-first) and fast.
+- Create reusable components: StorySection, ProductRitualCard, Timeline, CTA, Footer.
+- Use a clean folder structure: /app (pages), /components, /data, /public/images.
+- Provide placeholder images / gradients if product images are not present. BUT also include a clear comment in code showing where I will place my uploaded product images (e.g., /public/images/mens-health.png etc).
+- Add an accessible navigation with a sticky header and a “Journey” progress indicator on the homepage.
+
+PAGES (3–4 pages)
+1) Home (Story Journey)
+   - Full-screen hero with “Himalayan mist” layered background (CSS gradients + subtle noise overlay) and parallax-like motion.
+   - Headline: “25 Years of Himalayan Wellness Craft”
+   - Subheadline: “From foothill botanicals to daily ritual — Men’s Health, Women’s Health, Anti-Stress, and Glow.”
+   - A scroll-based story layout with 5 sections:
+     1) The Foothills (sourcing & purity)
+     2) The Ancient Method (Ayurvedic/Siddha wisdom)
+     3) 25-Year Refinement (consistency & learnings)
+     4) Quality Promise (testing, safety, authenticity) — do not claim medical cures
+     5) Your Daily Ritual (how customers use it)
+   - A horizontal/vertical timeline component with milestones from 1999 to today (25 years).
+   - CTA buttons: “Explore Rituals” (Products) + “Our Method” (Process).
+
+2) Products (Ritual Experience)
+   - Not a simple grid. Use “Ritual Cards”: large cards with expand/collapse.
+   - Each product card includes:
+     - Name, short “ritual line”, key benefits (worded as support, not cure)
+     - Suggested use (general wellness language)
+     - A “story snippet” tied to Himalayas
+     - A “Shop/Enquire” CTA (no payment integration needed)
+   - Add an interactive filter: “Calm / Glow / Strength / Balance”
+     - Anti Stress = Calm
+     - Ved Glow = Glow
+     - Men’s Health = Strength
+     - Women’s Health = Balance
+
+3) Our Method (Process)
+   - “The 5-Step Mountain Method” with illustrated steps:
+     - Harvest → Cleanse → Formulate → Verify → Pack
+   - Each step has a short narrative paragraph and a “quality note”.
+   - Include a “Trust & Transparency” section with FAQs (e.g., sourcing, formulation philosophy, quality checks). Avoid medical claims.
+
+4) About + Contact (Founder’s Note)
+   - Brand story: why the company exists, 25 years journey, and values.
+   - Include a CEO section with:
+     - CEO photo placeholder component (I will upload the CEO photo later)
+     - Contact details placeholders:
+       - CEO Name: [CEO_NAME]
+       - Email: [CEO_EMAIL]
+       - Phone: [CEO_PHONE]
+       - Location: [CITY, STATE]
+   - Include a simple contact form (name, email, message) that just shows a success toast (no backend needed).
+   - Footer with social placeholders.
+
+DESIGN REQUIREMENTS
+- Visual style: premium editorial + Himalayan natural tones.
+- Use soft gradients, subtle texture/noise overlay, and calm motion (no flashy animations).
+- Include microcopy that feels handcrafted and poetic (“a calm sip of the mountains” style) but keep it professional.
+- Must have consistent typography: a classy serif for headings + clean sans for body.
+- Add unique touches:
+  - “Journey progress” indicator on Home (e.g., 0–100%).
+  - Gentle parallax illusion using transforms on scroll.
+  - Hover states that feel “ritual-like” (slow glow, soft shadow).
+- Accessibility:
+  - Proper contrast, keyboard nav, aria labels, reduced motion support.
+
+CONTENT (WRITE THIS FOR ME)
+- Create all page copy: headlines, story sections, product descriptions, method descriptions, and FAQs.
+- Do not write medical cure claims. Use “supports”, “may help”, “promotes”, “designed to support”.
+
+IMAGE USAGE
+- Assume I will upload these product images and place them under /public/images:
+  - mens-health.png
+  - ved-glow.png
+  - womens-health.png
+  - anti-stress.png
+  - rhodo-cor.png (optional)
+- Use these filenames in code with fallback placeholders if they’re missing.
+
+DELIVERABLE
+- Output the full code in the Replit project.
+- Ensure it runs immediately.
+- Include clear comments: “Replace CEO details here” and “Place images here”.
+
+Start now.
