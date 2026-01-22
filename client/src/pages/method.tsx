@@ -9,9 +9,31 @@ export default function Method() {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      <div className="pt-32 pb-16 px-6 container mx-auto">
+      {/* Header Image */}
+      <div className="relative h-[40vh] overflow-hidden">
+        <motion.div 
+          initial={{ scale: 1.1 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 10, ease: "linear" }}
+          className="absolute inset-0"
+        >
+          <img src="/images/method-header.png" alt="Method" className="w-full h-full object-cover opacity-80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
+        </motion.div>
+        <div className="absolute inset-0 flex items-center justify-center pt-20">
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+            className="text-5xl md:text-7xl font-serif text-white drop-shadow-lg text-center"
+          >
+            The 5-Step Mountain Method
+          </motion.h1>
+        </div>
+      </div>
+
+      <div className="pb-16 px-6 container mx-auto">
         <div className="max-w-4xl mx-auto text-center mb-24">
-          <h1 className="text-5xl md:text-7xl font-serif mb-6">The 5-Step Mountain Method</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
             Purity is not an accident. It is a rigorous process of selection, cleansing, and verification.
           </p>
@@ -50,7 +72,7 @@ export default function Method() {
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-serif text-lg">Where do you source your ingredients?</AccordionTrigger>
               <AccordionContent className="text-muted-foreground leading-relaxed">
-                We work directly with farming cooperatives in the high-altitude regions of the Himalayas, specifically in Himachal Pradesh and Uttarakhand. This ensures we get the most potent plants that have struggled against the elements to produce rich phytochemical profiles.
+                We work directly with farming cooperatives in the high-altitude regions of Uttarakhand, specifically in the Nanda Devi Biosphere and Kumaon region. This ensures we get the most potent plants that have struggled against the elements to produce rich phytochemical profiles.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">

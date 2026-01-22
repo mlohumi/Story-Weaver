@@ -50,7 +50,7 @@ export default function About() {
             <h1 className="text-5xl font-serif leading-tight">Why We Exist</h1>
             <div className="prose prose-lg text-muted-foreground">
               <p>
-                Twenty-five years ago, I stood on a ridge overlooking the Spiti Valley. The silence was absolute. I realized then that wellness isn't just about what you take; it's about connecting with the rhythm of nature.
+                Twenty-five years ago, I stood on a ridge overlooking the Valley of Flowers in Uttarakhand. The silence was absolute. I realized then that wellness isn't just about what you take; it's about connecting with the rhythm of nature.
               </p>
               <p>
                 The Himalayan Plateau Inc. was born from that silence. We don't chase trends. We don't look for quick fixes. We look to the mountains, which have stood for millennia, and we ask: "What endures?"
@@ -81,7 +81,7 @@ export default function About() {
                  </div>
                  <div className="flex items-center gap-3">
                    <MapPin className="w-4 h-4 text-primary" />
-                   <span>Dharamshala, Himachal Pradesh, India</span>
+                   <span>Almora, Uttarakhand, India</span>
                  </div>
                </div>
             </div>

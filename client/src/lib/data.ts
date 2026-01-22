@@ -47,8 +47,8 @@ export const products = [
 ];
 
 export const timeline = [
-  { year: "1999", title: "The Beginning", description: "Our founder treks to the Spiti Valley and discovers the ancient art of herbology." },
-  { year: "2005", title: "First Harvest", description: "Establishing sustainable partnerships with local farming communities." },
+  { year: "1999", title: "The Beginning", description: "Our founder treks to the Nanda Devi Biosphere and discovers the ancient art of herbology." },
+  { year: "2005", title: "First Harvest", description: "Establishing sustainable partnerships with local farming communities in Uttarakhand." },
   { year: "2012", title: "The Lab", description: "Integration of modern chromatography to ensure purity without compromising tradition." },
   { year: "2018", title: "Global Reach", description: "Sharing the Himalayan secret with wellness seekers worldwide." },
   { year: "2024", title: "The Return", description: "Reinvesting in the land that gave us everything. 100% sustainable sourcing." }

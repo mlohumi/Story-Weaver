@@ -52,7 +52,7 @@ export default function Home() {
             <Button 
               size="lg" 
               onClick={() => setLocation("/products")}
-              className="bg-white text-foreground hover:bg-white/90 font-serif px-8 py-6 text-lg rounded-none"
+              className="bg-white text-foreground hover:bg-white/90 font-serif px-8 py-6 text-lg rounded-none transition-all hover:scale-105"
             >
               Explore Rituals
             </Button>
@@ -60,7 +60,7 @@ export default function Home() {
               size="lg" 
               variant="outline" 
               onClick={() => setLocation("/method")}
-              className="border-white text-white hover:bg-white/10 font-serif px-8 py-6 text-lg rounded-none"
+              className="border-white text-white hover:bg-white/10 font-serif px-8 py-6 text-lg rounded-none transition-all hover:scale-105"
             >
               Our Method
             </Button>
@@ -84,34 +84,40 @@ export default function Home() {
             index={0}
             title="The Foothills"
             subtitle="Sourcing & Purity"
-            content="Our journey begins at 12,000 feet. Here, the air is thin, the soil is untouched, and the botanicals grow with a resilience found nowhere else on earth."
+            content="Our journey begins at 12,000 feet in Uttarakhand. Here, the air is thin, the soil is untouched, and the botanicals grow with a resilience found nowhere else on earth."
             align="left"
+            image="/images/story-foothills.png"
           />
           
           <StorySection 
             index={1}
             title="The Ancient Method"
             subtitle="Wisdom of Ages"
-            content="We don't invent; we preserve. Following the lineage of Ayurvedic and Siddha traditions, we prepare our formulations exactly as the texts prescribe."
+            content="We don't invent; we preserve. Following the lineage of Ayurvedic and Siddha traditions, we prepare our formulations exactly as the texts prescribe, grinding herbs by hand when necessary."
             align="right"
+            image="/images/story-method.png"
           />
 
           <StorySection 
             index={2}
             title="25-Year Refinement"
             subtitle="Consistency & Learning"
-            content="Tradition does not mean stagnation. For a quarter of a century, we have refined our processes, ensuring that every capsule delivers a consistent, potent experience."
+            content="Tradition does not mean stagnation. For a quarter of a century, we have refined our processes, ensuring that every capsule delivers a consistent, potent experience of the purest Himalayan essence."
             align="center"
+            image="/images/story-quality.png"
           />
         </div>
 
         {/* TIMELINE */}
-        <section className="bg-muted/30 py-24">
-          <div className="container mx-auto px-6 text-center mb-16">
+        <section className="bg-muted/30 py-24 relative overflow-hidden">
+          <div className="absolute inset-0 opacity-5 pointer-events-none">
+             <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+          </div>
+          <div className="container mx-auto px-6 text-center mb-16 relative z-10">
             <h2 className="text-4xl font-serif mb-4">Our Journey</h2>
             <p className="text-muted-foreground">A quarter-century of dedication.</p>
           </div>
-          <div className="container mx-auto max-w-4xl">
+          <div className="container mx-auto max-w-4xl relative z-10">
             <Timeline />
           </div>
         </section>
@@ -126,7 +132,7 @@ export default function Home() {
             <Button 
               variant="outline" 
               onClick={() => setLocation("/method")}
-              className="border-primary text-primary hover:bg-primary hover:text-white px-8 py-6 rounded-none"
+              className="border-primary text-primary hover:bg-primary hover:text-white px-8 py-6 rounded-none transition-all hover:scale-105"
             >
               See How We Verify
             </Button>

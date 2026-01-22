@@ -28,10 +28,17 @@ export default function ProductRitualCard({ product }: ProductProps) {
       <div className="grid grid-cols-1 md:grid-cols-2 h-full">
         {/* Image Section */}
         <div className="relative h-64 md:h-full overflow-hidden bg-muted">
-          <img 
+          <motion.img 
             src={product.image} 
             alt={product.name}
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            animate={{ y: [0, -10, 0] }}
+            transition={{ 
+              duration: 4, 
+              repeat: Infinity, 
+              ease: "easeInOut",
+              delay: Math.random() * 2 // Random delay to offset animations
+            }}
           />
           <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500" />
           <div className="absolute top-4 left-4">
