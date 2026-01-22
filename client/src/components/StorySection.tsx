@@ -25,28 +25,30 @@ export default function StorySection({ title, subtitle, content, image, align = 
 
   return (
     <section ref={ref} className="min-h-[80vh] flex items-center justify-center py-24 relative overflow-hidden">
-      {/* Decorative Background Number */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15rem] md:text-[25rem] font-serif text-foreground/5 font-bold z-0 pointer-events-none select-none">
-        0{index + 1}
-      </div>
-
       <div className="container mx-auto px-6 relative z-10">
         <div className={`flex flex-col md:flex-row items-center gap-12 md:gap-24 ${isAlternating ? 'md:flex-row-reverse' : ''}`}>
           
           {/* Content Side */}
           <motion.div 
             style={{ y, opacity }}
-            className="flex-1 text-center md:text-left"
+            className="flex-1 text-center md:text-left relative"
           >
-            <span className="block text-accent text-sm font-bold tracking-[0.3em] uppercase mb-4">
-              {subtitle}
-            </span>
-            <h2 className="text-4xl md:text-6xl font-serif mb-8 leading-tight text-foreground">
-              {title}
-            </h2>
-            <p className="text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
-              {content}
-            </p>
+             {/* Decorative Background Number */}
+            <div className={`absolute top-1/2 left-1/2 md:left-0 md:top-0 -translate-x-1/2 -translate-y-1/2 md:translate-x-[-20%] md:translate-y-[-40%] text-[12rem] md:text-[18rem] font-serif text-foreground/5 font-bold z-0 pointer-events-none select-none leading-none`}>
+              0{index + 1}
+            </div>
+
+            <div className="relative z-10">
+              <span className="block text-accent text-sm font-bold tracking-[0.3em] uppercase mb-4">
+                {subtitle}
+              </span>
+              <h2 className="text-4xl md:text-6xl font-serif mb-8 leading-tight text-foreground">
+                {title}
+              </h2>
+              <p className="text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
+                {content}
+              </p>
+            </div>
           </motion.div>
 
           {/* Image Side */}

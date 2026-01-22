@@ -66,14 +66,14 @@ export default function About() {
                    CEO Photo Placeholder
                  </div>
                  <div>
-                   <h3 className="font-serif text-xl">Arjun Sharma</h3>
+                   <h3 className="font-serif text-xl">Rohit Agrawal</h3>
                    <p className="text-sm text-muted-foreground uppercase tracking-widest">Founder & CEO</p>
                  </div>
                </div>
                <div className="space-y-4 text-sm">
                  <div className="flex items-center gap-3">
                    <Mail className="w-4 h-4 text-primary" />
-                   <span>arjun@himalayanplateau.inc</span>
+                   <span>rohit@himalayanplateau.inc</span>
                  </div>
                  <div className="flex items-center gap-3">
                    <Phone className="w-4 h-4 text-primary" />

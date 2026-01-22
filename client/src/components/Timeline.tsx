@@ -31,8 +31,8 @@ export default function Timeline() {
                    </div>
                  </div>
               ) : (
-                <div className="text-left md:text-right">
-                   <span className="text-6xl font-serif text-accent/20 font-bold absolute -top-10 -left-4 md:-right-4 z-0">
+                <div className="text-left md:text-right relative">
+                   <span className="text-6xl font-serif text-accent/20 font-bold absolute -top-10 -left-4 md:left-auto md:-right-4 z-0">
                      {item.year}
                    </span>
                    <div className="relative z-10">
