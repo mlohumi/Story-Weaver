@@ -65,7 +65,7 @@ export default function About() {
                  <img src="/images/ceo-rohit.jpg" alt="Rohit Agrawal" className="w-24 h-24 rounded-full object-cover border-2 border-primary/20" />
                  <div>
                    <h3 className="font-serif text-2xl">Rohit Agrawal</h3>
-                   <p className="text-sm text-muted-foreground uppercase tracking-widest">Founder & CEO</p>
+                   <p className="text-sm text-muted-foreground uppercase tracking-widest">Co-founder and CEO</p>
                  </div>
                </div>
                
@@ -91,7 +91,7 @@ export default function About() {
                    <img src="/images/bod-utsav.jpg" alt="Utsav Saini" className="w-16 h-16 rounded-full object-cover border border-border" />
                    <div>
                      <h4 className="font-serif text-lg">Utsav Saini</h4>
-                     <p className="text-xs text-muted-foreground uppercase">Director</p>
+                     <p className="text-xs text-muted-foreground uppercase">Co-Founder and Director</p>
                    </div>
                  </div>
 
@@ -99,7 +99,7 @@ export default function About() {
                    <img src="/images/bod-lalit.jpg" alt="Dr. Lalit Upadhyay" className="w-16 h-16 rounded-full object-cover border border-border" />
                    <div>
                      <h4 className="font-serif text-lg">Dr. Lalit Upadhyay</h4>
-                     <p className="text-xs text-muted-foreground uppercase">Director</p>
+                     <p className="text-xs text-muted-foreground uppercase">Co-Founder and Director</p>
                    </div>
                  </div>
                </div>
