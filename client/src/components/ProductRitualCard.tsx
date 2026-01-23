@@ -27,11 +27,11 @@ export default function ProductRitualCard({ product }: ProductProps) {
     >
       <div className="grid grid-cols-1 md:grid-cols-2 h-full">
         {/* Image Section */}
-        <div className="relative h-64 md:h-full overflow-hidden bg-muted">
+        <div className="relative aspect-square md:aspect-auto md:h-full overflow-hidden bg-secondary/10 p-4">
           <motion.img 
             src={product.image} 
             alt={product.name}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
             animate={{ y: [0, -10, 0] }}
             transition={{ 
               duration: 4, 
@@ -40,9 +40,8 @@ export default function ProductRitualCard({ product }: ProductProps) {
               delay: Math.random() * 2 // Random delay to offset animations
             }}
           />
-          <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500" />
-          <div className="absolute top-4 left-4">
-             <span className="bg-white/90 backdrop-blur text-xs font-bold px-3 py-1 uppercase tracking-widest rounded-full">
+          <div className="absolute top-4 left-4 z-10">
+             <span className="bg-white/90 backdrop-blur text-xs font-bold px-3 py-1 uppercase tracking-widest rounded-full shadow-sm">
                {product.category}
              </span>
           </div>
