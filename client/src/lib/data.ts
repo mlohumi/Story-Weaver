@@ -5,44 +5,55 @@ export const products = [
     name: "Men's Health",
     ritualLine: "Strength from the Stone",
     category: "Strength",
-    description: "A potent blend of Shilajit and Ashwagandha designed to support vitality and endurance. Traditionally used to ground energy and build resilience.",
-    storySnippet: "Harvested from the high-altitude rocks where the air is thin and the sun is fierce.",
-    benefits: ["Supports stamina", "Promotes vitality", "Grounds energy"],
-    suggestedUse: "Take two capsules with warm milk or water at dawn.",
-    image: "/images/mens-health.png"
+    description: "A natural energy and stamina booster prepared in Cow Ghee using anti-aging herbs. Designed to rejuvenate vitality, improve vigour, and support natural testosterone levels.",
+    storySnippet: "Formulated with powerful herbs to enhance desire and performance, grounded in ancient wisdom.",
+    benefits: ["Boosts natural energy & stamina", "Supports healthy testosterone levels", "Rejuvenates vitality & vigour"],
+    suggestedUse: "Take regularly to support focus, stamina, and energy.",
+    image: "/images/product-mens-health.jpg"
   },
   {
     id: "womens-health",
     name: "Women's Health",
     ritualLine: "Balance of the Valley",
     category: "Balance",
-    description: "Shatavari and Lodhra come together to support hormonal balance and inner harmony. A gentle daily ritual for well-being.",
-    storySnippet: "Grown in the sheltered valleys where the monsoon rains nourish the soil.",
-    benefits: ["Supports hormonal balance", "Promotes inner calm", "Nourishes the body"],
-    suggestedUse: "Dissolve one tablet in water after your evening meal.",
-    image: "/images/womens-health.png"
+    description: "A comprehensive formula to support hormonal balance and regulate the menstrual cycle. Helps improve hemoglobin, provides relief from backache, and purifies the blood.",
+    storySnippet: "Active & Healthy formula with Cranberry flavor to regulate metabolism and provide strength.",
+    benefits: ["Supports hormonal balance", "Regulates menstruation cycle", "Improves hemoglobin & metabolism"],
+    suggestedUse: "Dissolve one tablet in water. Enjoy the cranberry flavor.",
+    image: "/images/product-womens-health.jpg"
   },
   {
     id: "anti-stress",
     name: "Anti Stress",
     ritualLine: "Calm of the Mist",
     category: "Calm",
-    description: "Brahmi and Jatamansi offer a reprieve from the modern pace. Designed to support mental clarity and relaxation.",
-    storySnippet: "Gathered from the misty peaks where silence is the only sound.",
-    benefits: ["Supports relaxation", "Promotes mental clarity", "Soothes the mind"],
-    suggestedUse: "Take one capsule when the world feels too loud.",
-    image: "/images/anti-stress.png"
+    description: "Ancient Vedic Ayurvedic Siddha formula for calm and relaxation. Features Mandukparni to support the nervous system, improve focus, and enhance mood.",
+    storySnippet: "Natural stress relief designed to bring emotional well-being and concentration.",
+    benefits: ["Natural stress relief", "Improves focus & concentration", "Supports nervous system relaxation"],
+    suggestedUse: "Take daily to enhance mood and find your inner calm.",
+    image: "/images/product-anti-stress.jpg"
   },
   {
     id: "ved-glow",
     name: "Ved Glow",
     ritualLine: "Radiance of the Sun",
     category: "Glow",
-    description: "Manjistha and Neem working to support healthy skin from within. A tribute to the golden light of the Himalayas.",
-    storySnippet: "Inspired by the sunrise hitting the snow-capped peaks.",
-    benefits: ["Supports healthy skin", "Promotes natural radiance", "Purifies from within"],
-    suggestedUse: "Take two capsules daily to welcome the light.",
-    image: "/images/ved-glow.png"
+    description: "Proprietary Ayurvedic product formulated by Ancient Siddha Ayurvedic Vidhi. Purifies blood to bring a natural glow, fight blemishes, and prevent wrinkles.",
+    storySnippet: "Unlock your skin's natural radiance and fight pigmentation from within.",
+    benefits: ["Purifies blood for natural glow", "Fights blemishes & pigmentation", "Prevents wrinkles & skin scars"],
+    suggestedUse: "Take regularly to support healthy, glowing skin.",
+    image: "/images/product-ved-glow.jpg"
+  },
+  {
+    id: "rhodo-cor",
+    name: "Rhodo Cor",
+    ritualLine: "Heart of the Himalayas",
+    category: "Balance",
+    description: "Supports cardiovascular wellness with rich natural Omega 3, 5, 6, 7 & 9 antioxidants. Helps maintain normal blood cholesterol levels and supports liver health.",
+    storySnippet: "A powerful antioxidant blend to support cardiac wellness and immunity.",
+    benefits: ["Supports cardiovascular wellness", "Rich in natural Omegas & Antioxidants", "Helps maintain healthy cholesterol"],
+    suggestedUse: "Take to improve immunity and support cardiac function.",
+    image: "/images/product-rhodo-cor.jpg"
   }
 ];
 

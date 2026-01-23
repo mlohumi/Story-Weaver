@@ -61,16 +61,15 @@ export default function About() {
             </div>
 
             <div className="bg-muted/30 p-8 rounded-lg border border-border mt-12">
-               <div className="flex items-center gap-6 mb-6">
-                 <div className="w-20 h-20 bg-gray-300 rounded-full flex-shrink-0 flex items-center justify-center text-xs text-muted-foreground uppercase text-center p-2">
-                   CEO Photo Placeholder
-                 </div>
+               <div className="flex items-center gap-6 mb-8">
+                 <img src="/images/ceo-rohit.jpg" alt="Rohit Agrawal" className="w-24 h-24 rounded-full object-cover border-2 border-primary/20" />
                  <div>
-                   <h3 className="font-serif text-xl">Rohit Agrawal</h3>
+                   <h3 className="font-serif text-2xl">Rohit Agrawal</h3>
                    <p className="text-sm text-muted-foreground uppercase tracking-widest">Founder & CEO</p>
                  </div>
                </div>
-               <div className="space-y-4 text-sm">
+               
+               <div className="space-y-4 text-sm mb-8 border-b border-border pb-8">
                  <div className="flex items-center gap-3">
                    <Mail className="w-4 h-4 text-primary" />
                    <span>rohit@himalayanplateau.inc</span>
@@ -81,7 +80,27 @@ export default function About() {
                  </div>
                  <div className="flex items-center gap-3">
                    <MapPin className="w-4 h-4 text-primary" />
-                   <span>Almora, Uttarakhand, India</span>
+                   <span>Haldwani, Nainital, Uttarakhand, India</span>
+                 </div>
+               </div>
+
+               <div className="space-y-6">
+                 <span className="text-xs font-bold uppercase tracking-widest text-accent">Board of Directors</span>
+                 
+                 <div className="flex items-center gap-4">
+                   <img src="/images/bod-utsav.jpg" alt="Utsav Saini" className="w-16 h-16 rounded-full object-cover border border-border" />
+                   <div>
+                     <h4 className="font-serif text-lg">Utsav Saini</h4>
+                     <p className="text-xs text-muted-foreground uppercase">Director</p>
+                   </div>
+                 </div>
+
+                 <div className="flex items-center gap-4">
+                   <img src="/images/bod-lalit.jpg" alt="Dr. Lalit Upadhyay" className="w-16 h-16 rounded-full object-cover border border-border" />
+                   <div>
+                     <h4 className="font-serif text-lg">Dr. Lalit Upadhyay</h4>
+                     <p className="text-xs text-muted-foreground uppercase">Director</p>
+                   </div>
                  </div>
                </div>
             </div>
