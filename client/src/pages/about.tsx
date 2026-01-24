@@ -72,7 +72,7 @@ export default function About() {
                <div className="space-y-4 text-sm mb-8 border-b border-border pb-8">
                  <div className="flex items-center gap-3">
                    <Mail className="w-4 h-4 text-primary" />
-                   <span>rohit@himalayanplateau.inc</span>
+                   <span>thehimalayanplateau@gmail.com</span>
                  </div>
                  <div className="flex items-center gap-3">
                    <Phone className="w-4 h-4 text-primary" />

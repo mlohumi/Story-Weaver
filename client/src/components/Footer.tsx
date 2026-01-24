@@ -24,8 +24,7 @@ export default function Footer() {
           <h4 className="font-sans text-sm font-bold uppercase tracking-widest mb-6 text-accent">Connect</h4>
           <ul className="space-y-4 text-muted/60">
             <li><a href="https://www.instagram.com/thehimalayanplateau?igsh=MWpjZXI5ZmtldnJ4aw==" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors flex items-center gap-2">Instagram</a></li>
-            <li>Twitter</li>
-            <li>Email Us</li>
+            <li><Link href="/about" className="hover:text-accent transition-colors">Email Us</Link></li>
           </ul>
         </div>
       </div>
