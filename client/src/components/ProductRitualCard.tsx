@@ -100,10 +100,6 @@ export default function ProductRitualCard({ product }: ProductProps) {
                 <>Discover Ritual <Plus className="w-4 h-4" /></>
               )}
             </button>
-
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-serif px-6">
-              Shop Now <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
           </div>
         </div>
       </div>

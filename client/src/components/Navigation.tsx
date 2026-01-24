@@ -54,9 +54,6 @@ export default function Navigation() {
               {link.label}
             </Link>
           ))}
-          <Button variant="outline" className="ml-4 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300">
-            Shop Now
-          </Button>
         </nav>
 
         {/* Mobile Nav Toggle */}
