@@ -76,7 +76,7 @@ export default function About() {
                  </div>
                  <div className="flex items-center gap-3">
                    <Phone className="w-4 h-4 text-primary" />
-                   <span>+91 98765 43210</span>
+                   <span>+91 99276 52817</span>
                  </div>
                  <div className="flex items-center gap-3">
                    <MapPin className="w-4 h-4 text-primary" />
