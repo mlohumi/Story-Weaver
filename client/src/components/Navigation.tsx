@@ -37,8 +37,9 @@ export default function Navigation() {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="font-serif text-2xl font-bold tracking-widest text-foreground hover:opacity-80 transition-opacity">
-          HIMALAYAN PLATEAU
+        <Link href="/" className="font-serif text-2xl font-bold tracking-widest text-foreground hover:opacity-80 transition-opacity flex items-center gap-3">
+          <img src="/images/brand-logo.jpg" alt="The Himalayan Plateau Inc." className="h-12 w-12 object-contain rounded-full" />
+          <span className="hidden md:inline">HIMALAYAN PLATEAU</span>
         </Link>
 
         {/* Desktop Nav */}
