@@ -1,49 +1,18 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
 import { Mail, MapPin } from "lucide-react";
 
-const formSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters."),
-  email: z.string().email("Invalid email address."),
-  message: z.string().min(10, "Message must be at least 10 characters."),
-});
+const CONTACT_EMAIL = "thehimalayanplateau@gmail.com";
 
 export default function About() {
-  const { toast } = useToast();
-  
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      message: "",
-    },
-  });
-
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast({
-      title: "Message Sent",
-      description: "Thank you for reaching out. We will get back to you shortly.",
-    });
-    form.reset();
-  }
-
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       <div className="pt-32 pb-16 px-6 container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
-          
+
           {/* Brand Story */}
           <div className="space-y-8">
             <span className="text-accent text-sm font-bold tracking-widest uppercase">Founder's Note</span>
@@ -68,11 +37,11 @@ export default function About() {
                    <p className="text-sm text-muted-foreground uppercase tracking-widest">Co-founder and CEO</p>
                  </div>
                </div>
-               
+
                <div className="space-y-4 text-sm mb-8 border-b border-border pb-8">
                  <div className="flex items-center gap-3">
                    <Mail className="w-4 h-4 text-primary" />
-                   <span>thehimalayanplateau@gmail.com</span>
+                   <span>{CONTACT_EMAIL}</span>
                  </div>
                  <div className="flex items-center gap-3">
                    <MapPin className="w-4 h-4 text-primary" />
@@ -82,7 +51,7 @@ export default function About() {
 
                <div className="space-y-6">
                  <span className="text-xs font-bold uppercase tracking-widest text-accent">Board of Directors</span>
-                 
+
                  <div className="flex items-center gap-4">
                    <img src="/images/bod-utsav.jpg" alt="Utsav Saini" className="w-16 h-16 rounded-full object-cover border border-border" />
                    <div>
@@ -102,59 +71,31 @@ export default function About() {
             </div>
           </div>
 
-          {/* Contact Form */}
-          <div className="bg-card p-8 md:p-12 rounded-lg shadow-sm border border-border">
+          {/* Contact */}
+          <div className="bg-card p-8 md:p-12 rounded-lg shadow-sm border border-border md:sticky md:top-32">
             <h2 className="text-3xl font-serif mb-6">Start Your Journey</h2>
             <p className="text-muted-foreground mb-8">
-              Have questions about our rituals or sourcing? We'd love to hear from you.
+              Have questions about our rituals or sourcing? We'd love to hear from you. Reach out anytime and a member of our team will get back to you.
             </p>
 
-            <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                <FormField
-                  control={form.control}
-                  name="name"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Name</FormLabel>
-                      <FormControl>
-                        <Input placeholder="Your name" {...field} className="bg-background" />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Email</FormLabel>
-                      <FormControl>
-                        <Input placeholder="your@email.com" {...field} className="bg-background" />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="message"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Message</FormLabel>
-                      <FormControl>
-                        <Textarea placeholder="Tell us how we can help..." {...field} className="bg-background min-h-[120px]" />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-serif text-lg py-6">
-                  Send Message
-                </Button>
-              </form>
-            </Form>
+            <div className="flex items-center gap-4 p-5 rounded-lg bg-muted/30 border border-border mb-8">
+              <Mail className="w-5 h-5 text-primary shrink-0" />
+              <a
+                href={`mailto:${CONTACT_EMAIL}`}
+                className="font-serif text-lg break-all hover:text-primary transition-colors"
+              >
+                {CONTACT_EMAIL}
+              </a>
+            </div>
+
+            <Button
+              asChild
+              className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-serif text-lg py-6"
+            >
+              <a href={`mailto:${CONTACT_EMAIL}?subject=Inquiry%20from%20your%20website`}>
+                Email Us
+              </a>
+            </Button>
           </div>
 
         </div>
